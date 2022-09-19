@@ -1,0 +1,113 @@
+ body{
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+ .steper-container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+ }
+ .form-container .header {
+    flex: 20%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .form-container .body {
+    flex: 60%;
+  }
+  
+  .form-container .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  .form-container .footer button {
+    border-radius: 7px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(78, 142, 179);
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    margin: 5px;
+  }
+  .form-container .footer button:disabled {
+    background-color: dimgrey;
+    cursor: not-allowed;
+  }
+  
+ .progress-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 150px;
+
+ }
+ .progress-bar::before{
+    content: "";
+    position: absolute;
+    background-color: #e0e0e0;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+
+ }
+ .progress{
+    position: absolute;
+    background-color: rgb(30, 39, 39);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    height: 3px;
+    width: 50%;
+    z-index: -1;
+    transition: 0.4s ease;
+
+ }
+ .circle{
+    background-color: white;
+    color: rgb(231, 20, 20);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #e0e0e0 3px solid;
+    transition: 0.4s ease;
+ }
+ .circle-active{
+    border-color: black;
+    background-color: rgb(53, 98, 196);
+    color: darkgray;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #e0e0e0 3px solid;
+    transition: 0.4s ease;
+ }
+
+
